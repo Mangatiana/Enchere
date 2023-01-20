@@ -125,7 +125,7 @@ public class EnchereService {
 
     public Connection getConnex() throws ClassNotFoundException, SQLException {
         Class.forName("org.postgresql.Driver");
-        return DriverManager.getConnection("jdbc:postgresql://localhost/enchere?user=enchere&password=enchere&ssl=false");
+        return DriverManager.getConnection("jdbc:postgresql://snuffleupagus.db.elephantsql.com:5432/mfsirmro?user=mfsirmro&password=aY0GIbJP6uAiQaePN5x_YJAcNDjupT7U&ssl=false");
     }
 
     public ArrayList<Enchere> rechercheAv(String motCle,String debut,String categorie,String prix,String statut) throws SQLException, ClassNotFoundException {
